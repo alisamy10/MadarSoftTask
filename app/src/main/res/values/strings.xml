@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MadarSoftTask</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="save">save user</string>
+    <string name="age">age</string>
+    <string name="name">Username</string>
 </resources>
