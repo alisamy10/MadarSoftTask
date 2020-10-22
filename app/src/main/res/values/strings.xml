@@ -5,4 +5,7 @@
     <string name="save">save user</string>
     <string name="age">age</string>
     <string name="name">Username</string>
+    <string name="action_delete">Delete All</string>
+    <string name="action_search">Search</string>
+
 </resources>

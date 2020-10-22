@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/addUserFragment"
-        android:name="com.ali.madarsofttask.presentation.AddUserFragment"
+        android:name="com.ali.madarsofttask.presentation.addUserFragment.AddUserFragment"
         android:label="fragment_add_user"
         tools:layout="@layout/fragment_add_user" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/showUsersFragment"
-        android:name="com.ali.madarsofttask.presentation.ShowUsersFragment"
+        android:name="com.ali.madarsofttask.presentation.showUserFragment.ShowUsersFragment"
         android:label="fragment_show_users"
         tools:layout="@layout/fragment_show_users" />
 </navigation>

@@ -1,4 +1,4 @@
-package com.ali.madarsofttask.presentation
+package com.ali.madarsofttask.presentation.showUserFragment
 
 import androidx.fragment.app.Fragment
 import com.ali.madarsofttask.R
