@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/addUserFragment">
+
+    <fragment
+        android:id="@+id/addUserFragment"
+        android:name="com.ali.madarsofttask.presentation.AddUserFragment"
+        android:label="fragment_add_user"
+        tools:layout="@layout/fragment_add_user" >
+        <action
+            android:id="@+id/action_addUserFragment_to_showUsersFragment"
+            app:destination="@id/showUsersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showUsersFragment"
+        android:name="com.ali.madarsofttask.presentation.ShowUsersFragment"
+        android:label="fragment_show_users"
+        tools:layout="@layout/fragment_show_users" />
+</navigation>
