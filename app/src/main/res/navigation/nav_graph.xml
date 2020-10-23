@@ -12,7 +12,11 @@
         tools:layout="@layout/fragment_add_user" >
         <action
             android:id="@+id/action_addUserFragment_to_showUsersFragment"
-            app:destination="@id/showUsersFragment" />
+            app:destination="@id/showUsersFragment"
+            app:launchSingleTop="true"
+
+            app:popUpTo="@+id/nav_host_fragment"
+            app:popUpToInclusive="true"/>
     </fragment>
     <fragment
         android:id="@+id/showUsersFragment"
