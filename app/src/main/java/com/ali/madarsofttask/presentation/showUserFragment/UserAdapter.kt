@@ -20,7 +20,7 @@ class UserAdapter(private val interaction: Interaction? = null) :
         override fun areContentsTheSame(oldItem: User, newItem: User) = oldItem==newItem
 
     }
-    private val differ = AsyncListDiffer(this, DIFF_CALLBACK)
+     val differ = AsyncListDiffer(this, DIFF_CALLBACK)
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
