@@ -1,5 +1,6 @@
 package com.ali.madarsofttask.entity
 
+import androidx.lifecycle.LiveData
 import com.ali.madarsofttask.entity.source.local.IOfflineDataSource
 import com.ali.madarsofttask.entity.source.model.User
 import javax.inject.Inject
@@ -7,7 +8,7 @@ import javax.inject.Inject
 class UserRepository  @Inject constructor(private val offlineDataSource: IOfflineDataSource){
 
 
-    fun getAllUsers(): List<User> = offlineDataSource.getAllUsers()
+    fun getAllUsers(): LiveData<List<User>> = offlineDataSource.getAllUsers()
 
     suspend fun insertUser(user : User){
         offlineDataSource.insertUser(user)

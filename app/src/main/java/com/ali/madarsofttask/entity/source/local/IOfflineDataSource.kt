@@ -1,11 +1,12 @@
 package com.ali.madarsofttask.entity.source.local
 
+import androidx.lifecycle.LiveData
 import com.ali.madarsofttask.entity.source.model.User
 
 interface IOfflineDataSource {
 
 
-     fun getAllUsers(): List<User> = emptyList()
+     fun getAllUsers(): LiveData<List<User>>
 
     suspend fun insertUser(user : User){}
 

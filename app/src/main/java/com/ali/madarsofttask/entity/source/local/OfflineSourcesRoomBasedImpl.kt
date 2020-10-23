@@ -5,7 +5,7 @@ import javax.inject.Inject
 
 class OfflineSourcesRoomBasedImpl  @Inject constructor (private val userDao: UserDao) : IOfflineDataSource  {
 
-    override  fun getAllUsers() = userDao.getAllUsers()
+    override   fun getAllUsers() = userDao.getAllUsers()
 
 
     override suspend fun insertUser(user: User) {
