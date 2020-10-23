@@ -78,6 +78,7 @@ class UserDatabaseTest {
         dataDao.deleteAllUsers()
         val allUsers = dataDao.getAllUsers().getOrAwaitValue()
         assertThat(allUsers.size, `is`(0))
+
     }
 
 
